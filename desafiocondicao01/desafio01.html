@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 Sugestões</title>
+    <link rel="shortcut icon" href="favicons/faviconbulb.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="container">
+        <h1>As 3 sugestões</h1>
+        </div> 
+        <h4>Recomendações de conteúdo online</h4>
+        
+        <main>
+            <div class="box">
+            <p class="sub">Vou te recomendar <strong>3 conteúdos</strong> <i>online</i> com base na sua idade.<br> Digite sua idade abaixo para que eu possa verificar em meu sistema<br> quais conteúdos são <strong>adequados</strong> para você.</p><br>
+            <p class="sub2"> Digite <strong>aqui</strong> sua idade: <input type="number" name="txti" id="txti">
+                    <input type="button" value="Verificar" onclick="Calcular()" class="ver"></p></div>
+                <div id="res"></div><br>
+            
+                <script>
+            function Calcular() {
+                let txtid = window.document.getElementById('txti')
+                let res = window.document.getElementById('res')
+                let i = Number(txti.value)
+                res.innerHTML = `<p class="centralizado">Sua idade é <strong>${i}</strong> anos.</p>`
+            
+                if (i < 18) {
+                    res.innerHTML += `<p class="centralizado">Você é <strong>menor</strong> de idade.</p>
+                        <aside id="as1">
+                        
+                        <h4>Aqui vão algumas recomendações para você, clique em cima para ter acesso:</h4>
+                        <ul>
+                        <p><strong>Sites de Jogos:</strong></p> 
+
+                        <li><a href="https://www.clickjogos.com.br/" target="_blank">Click Jogos</a></li>
+                        <li><a href="https://www.friv.com/?gad_source=1&gclid=CjwKCAjwupGyBhBBEiwA0UcqaJtjGHsCzWLpbaZv3R2Sm220otQxAmnMMShQIpzmXlqVc-Z0YzcjuhoCDvMQAvD_BwE" target="_blank">Friv</a>
+                        <li><a href="https://www.crazygames.com.br/">Crazy Games</a></li>
+
+                        <p><strong>Sites de Livros:</strong>
+                        <li><a href="https://bamboleio.com.br/" target="_blank">Bamboleio</a></li>
+                        <li><a href="https://storylineonline.net/" target="_blank">Storyline Online</a></li>
+                        <li><a href="https://www.euleioparaumacrianca.com.br/" target="_blank">Leia para uma criança</a></li>
+                        
+                        <p><strong>Playlists no Youtube:</strong></p>
+                        <li><a href="https://youtube.com/playlist?list=PLtli2u7ZxmXXD2CQGmSwb811plZuNjpRG&si=UUrupRc_Ap5QGWIR" target="_blank">Música infantil</a></li>
+                        <li><a href="https://youtube.com/playlist?list=PLSKEES26m92aC2usBJ8WqhTLamYK2UvZS&si=jya7cmG0Nro3c7pi" target="_blank">Música pop adolescente</a></li>
+                        <li><a href="https://youtube.com/playlist?list=PLxLE50L1RTojtnIEgAr2gAEu4VauNs07k&si=yrsqnYRbgvuPkNV-" target="_blank">Jogos infanto-juvenis</a></li>
+                        
+                        </aside>`
+            
+                } else {
+                    res.innerHTML += `<p class="centralizado">Você é <strong>maior</strong> de idade.</p>
+                        <aside id="as2">
+                        <h4>Aqui vão algumas recomendações para você, clique em cima para ter acesso:</h4>
+                        <ul>
+                        <p><strong>Sites de Jogos:</strong></p>
+                        <li><a href="https://store.steampowered.com/genre/Free%20to%20Play" target="_blank">Steam</a></li>
+                        <li><a href="https://store.epicgames.com/pt-BR/" target="_blank">Epic Games</a></li>
+                        <li><a href="https://www.riotgames.com/pt-br" target="_blank">Riot Games</a></li>
+                        <p><strong>Sites de Livros:</strong></p>
+                        <li><a href="https://www.baixelivros.com.br/#google_vignette" target="_blank">Baixe Livros</a></li>
+                        <li><a href="https://www.livrosdigitais.org.br/livros" target="_blank">Livros Digitais</a></li>
+                        <li><a href="https://www.estantevirtual.com.br/?gad_source=1&gclid=Cj0KCQjw3ZayBhDRARIsAPWzx8qzDvuk3h9le2qbofO25ceZelJLoCOHczrmWbNifY8Kj1DrLGRQzC4aAqONEALw_wcB" target="_blank">Estante Virtual</a></li>
+                        <p><strong>Playlists no Youtube:</strong></p>
+                        <li><a href="https://youtube.com/playlist?list=PLbpi6ZahtOH7wvHqyW5FP-afBByBW2DAS&si=7ZQxEiO0npPVgQR0" target="_blank">Playlist Maquiagem</a></li>
+                        <li><a href="https://youtube.com/playlist?list=PL4q1wIPcD89pbEaYV4YazSVxuJE4P8tu_&si=rwhcDwWC0dtaDC48" target="_blank">Playlist Futebol</a></li>
+                        <li><a href="https://youtube.com/playlist?list=PLBa553wqPfXDgHe3InA3p36JQu-itCePy&si=ASX2NpdmA8E6NAF6" target="_blank">Playlist Stand Up</a></li>
+
+                        </ul>
+                        </aside>`
+                }
+            }
+                 </script>
+        </main>
+     <footer><p>Site criado por <strong><a href="https://www.linkedin.com/in/amanda-farias-1aa60b269/" target="_blank">Amanda Farias</a></strong></p></footer>
+</body>
+</html>
