@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-    background-color: rgb(233, 194, 135);
+    background-color: rgb(201, 166, 101);
     font: normal 15pt Arial;
 }
 header {
@@ -16,11 +16,6 @@ section {
     width: 500px;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.205);
-}
-
-div {
-    text-align: center;
-    padding: 8px;
 }
 
 footer {
